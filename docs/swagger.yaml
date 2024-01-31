@@ -1,0 +1,24 @@
+definitions:
+  model.Response:
+    properties:
+      data: {}
+      message:
+        type: string
+      status:
+        type: integer
+    type: object
+info:
+  contact: {}
+paths:
+  /user/:
+    get:
+      description: Retrieve user details with a sample response
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Response'
+      summary: Get user details
+swagger: "2.0"

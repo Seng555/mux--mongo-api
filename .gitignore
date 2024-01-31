@@ -1,0 +1,9 @@
+# Ignore temporary files
+tmp/
+
+# Ignore binary files
+*.exe
+*.dll
+
+# Ignore dependencies
+vendor/
