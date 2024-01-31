@@ -9,8 +9,8 @@ import (
 
 // SetupUserRoutes sets up routes for "/api/user"
 func SetupUserRoutes(r *mux.Router) {
-	userRouter := r.PathPrefix("/api/user").Subrouter()
+	userRouter := r.PathPrefix("/api/auth").Subrouter()
 
 	//handles the /api/user/ endpoint
-	userRouter.HandleFunc("/", usersController.GetUser).Methods("GET")
+	userRouter.HandleFunc("/register", usersController.CreateUser).Methods("POST")
 }
