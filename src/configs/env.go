@@ -24,3 +24,7 @@ func EnvMongoDB() string {
 	loadEnv()
 	return os.Getenv("MONGODB")
 }
+func EnvPrivateKey() string {
+	loadEnv()
+	return os.Getenv("SERVER_KEY")
+}

@@ -3,10 +3,13 @@ package model
 
 import (
 	"time"
+
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
 // User represents a user model
 type User struct {
+	Id primitive.ObjectID `json:"_id,omitempty" bson:"_id,omitempty"`
 	Email        string     `json:"email" validate:"required,email"`
 	Password     string     `json:"password" validate:"required"`
 	FirstName    string     `json:"firstName,omitempty"`

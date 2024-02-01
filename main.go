@@ -3,8 +3,8 @@ package main
 
 import (
 	"log"
-	"mux-mongo-api/configs"
-	"mux-mongo-api/router"
+	"mux-mongo-api/src/configs"
+	"mux-mongo-api/src/router"
 	"net/http"
 
 	"github.com/gorilla/mux"
