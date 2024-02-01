@@ -4,6 +4,7 @@ tmp/
 # Ignore binary files
 *.exe
 *.dll
+.env
 
 # Ignore dependencies
 vendor/
